@@ -299,7 +299,6 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path-to-pattern.svg') repeat;
     opacity: 0.1;
 }
 
@@ -2444,7 +2443,6 @@ header.scrolled .nav-list a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path-to-pattern.svg') repeat;
     opacity: 0.05;
 }
 
@@ -3338,3 +3336,33 @@ textarea.form-control {
         font-size: 1rem;
     }
 } 
+
+/* Policy Checkbox Styles */
+.policy-checkbox {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.policy-checkbox label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.policy-checkbox a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.policy-checkbox a:hover {
+    color: var(--secondary-color);
+}
