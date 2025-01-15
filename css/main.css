@@ -2451,6 +2451,11 @@ header.scrolled .nav-list a {
     z-index: 1;
 }
 
+.footer-address {
+    text-decoration: none;
+		color: var(--white);
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
