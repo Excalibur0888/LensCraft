@@ -154,24 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Lazy loading for img
-    const lazyimg = document.querySelectorAll('img[]');
-    
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.add('loaded');
-                    observer.unobserve(img);
-                }
-            });
-        });
-
-        lazyimg.forEach(img => imageObserver.observe(img));
-    }
-
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
